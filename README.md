@@ -40,7 +40,7 @@ Leverages Next.js code-splitting and image optimization; semantic markup and `es
 
 ## Prerequisites
 
-- Node.js: `18.17.0`
+- Node.js: `16`
 
 ## Installation
 
