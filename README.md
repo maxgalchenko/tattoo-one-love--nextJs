@@ -1,30 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Tattoo One Love – Next.js Frontend
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-10-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-17-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Emotion](https://img.shields.io/badge/Emotion-11-DB7093?style=for-the-badge)
+![SWR](https://img.shields.io/badge/SWR-0.3-000000?style=for-the-badge)
+![ESLint](https://img.shields.io/badge/ESLint-Airbnb-4B32C3?style=for-the-badge&logo=eslint)
+![Prettier](https://img.shields.io/badge/Prettier-2.2-1A2C34?style=for-the-badge&logo=prettier)
+![Node.js](https://img.shields.io/badge/Node.js-18.17.0-339933?style=for-the-badge&logo=node.js)
+
+</div>
+
+## Overview
+
+Marketing website frontend for Tattoo One Love. Built with Next.js (pages router) and Emotion, consuming a Strapi backend for content with SEO via `next-seo`.
+
+## Key Features
+
+- SEO-friendly pages with SSR and `next-seo`
+- Responsive theming with Emotion and a custom breakpoint provider
+- Strapi-powered content (messages, policies, gallery/works)
+
+## Tech Stack
+
+React 17, Next.js 10, Node.js 18, Emotion 11, SWR 0.3, react-slick
+
+## Architecture
+
+Next.js Pages Router (`pages/`), client-side data via `StrapiService` using `NEXT_PUBLIC_API_URL`, Emotion theme + global styles, image domains configured in `next.config.js`, SEO defaults via `next-seo`.
+
+## Performance & Accessibility
+
+Leverages Next.js code-splitting and image optimization; semantic markup and `eslint-plugin-jsx-a11y` to encourage accessible components.
+
+## Quality
+
+- Linting: ESLint (Airbnb) • Formatting: Prettier
+
+## Prerequisites
+
+- Node.js: `18.17.0`
+
+## Installation
+
+```bash
+git clone https://github.com/maxgalchenko/tattoo-one-love--nextJs.git
+cd tattoo-one-love--nextJs
+npm install
+```
+
+## Environment Variables
+
+```env
+NEXT_PUBLIC_API_URL=https://admin.tattooonelove.com
+```
+
+## Quick Start
 
 ```bash
 npm run dev
-# or
-yarn dev
+# Production
+npm run build
+npm start
 ```
+Open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `npm run dev` – Start the Next.js development server
+- `npm run build` – Build the app for production
+- `npm start` – Run the production server
+- `npm run lint` – Lint the codebase with ESLint
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+![Main](./public/Hero/menu.jpg)
+![404](./public/404.jpg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+<div align="center">
 
-## Deploy on Vercel
+Built with ❤️ by [Maksym Galchenko](https://github.com/maxgalchenko)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/galchenko-max/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=for-the-badge&logo=web)](https://portfolio-green-six-29.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:galchenko.maksym@gmail.com)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</div>
