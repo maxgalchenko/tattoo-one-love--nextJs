@@ -64,6 +64,7 @@ npm run dev
 npm run build
 npm start
 ```
+
 Open http://localhost:3000
 
 ## Available Scripts
